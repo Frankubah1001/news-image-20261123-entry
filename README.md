@@ -1,8 +1,8 @@
 # The World in Four Reports
 
-[![make.fun competition](https://make.fun/badge/news-image-20261123.svg)](https://make.fun/c/news-image-20261123)
-[![Rank](https://make.fun/badge/news-image-20261123/Frankubah1001/news-image-20261123-entry/rank.svg)](https://make.fun/c/news-image-20261123)
-[![Reward](https://make.fun/badge/news-image-20261123/Frankubah1001/news-image-20261123-entry/reward.svg)](https://make.fun/c/news-image-20261123)
+[![make.fun competition](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/c/news-image-20261122)
+[![Rank](https://make.fun/badge/news-image-20261122/Frankubah1001/news-image-20261123-entry/rank.svg)](https://make.fun/c/news-image-20261122)
+[![Reward](https://make.fun/badge/news-image-20261122/Frankubah1001/news-image-20261123-entry/reward.svg)](https://make.fun/c/news-image-20261122)
 
 An original illustrated front page for Monday, 23 November 2026. It highlights
 four developments from Belgium, Zambia, the United Kingdom and the Pacific,
