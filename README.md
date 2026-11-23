@@ -1,8 +1,8 @@
 # The World in Four Reports
 
-[![make.fun competition](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/c/news-image-20261122)
-[![Rank](https://make.fun/badge/news-image-20261122/Frankubah1001/news-image-20261123-entry/rank.svg)](https://make.fun/c/news-image-20261122)
-[![Reward](https://make.fun/badge/news-image-20261122/Frankubah1001/news-image-20261123-entry/reward.svg)](https://make.fun/c/news-image-20261122)
+[![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![rank](https://make.fun/badge/news-image-20261122/Frankubah1001/news-image-20261123-entry/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![reward](https://make.fun/badge/news-image-20261122/Frankubah1001/news-image-20261123-entry/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 
 An original illustrated front page for Monday, 23 November 2026. It highlights
 four developments from Belgium, Zambia, the United Kingdom and the Pacific,
@@ -48,5 +48,5 @@ MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
 The program copies `entry.png` to the output directory without network access.
-For a GitHub submission, set the repository About website to
-`https://make.fun/c/news-image-20261123` and add the `makefun` topic.
+For the [Make.fun competition](https://make.fun/bounty/news-image-20261122),
+add the `makefun` topic to the GitHub repository.
