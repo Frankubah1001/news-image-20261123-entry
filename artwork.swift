@@ -156,94 +156,102 @@ func cardHeading(_ label: String, _ first: String, _ second: String,
     }
 }
 
-func drawUkraineScene(x: CGFloat, y: CGFloat) {
-    circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleRed)
-    rounded(CGRect(x: x + 338, y: y + 96, width: 72, height: 112),
-            radius: 4, ink)
-    for row in 0..<4 {
-        for column in 0..<3 {
-            rectangle(CGRect(x: x + 348 + CGFloat(column) * 19,
-                             y: y + 108 + CGFloat(row) * 22,
-                             width: 9, height: 10), color(0xf3c974))
-        }
-    }
-    polygon([
-        (x + 377, y + 194), (x + 394, y + 208), (x + 409, y + 193),
-        (x + 397, y + 181), (x + 383, y + 183)
-    ], coral)
-    polygon([
-        (x + 346, y + 96), (x + 360, y + 86), (x + 378, y + 96),
-        (x + 365, y + 108)
-    ], muted)
-    polygon([
-        (x + 331, y + 83), (x + 352, y + 83), (x + 342, y + 98)
-    ], gold)
-    line(x + 333, y + 78, x + 350, y + 78, ink, width: 3)
-    circle(CGRect(x: x + 338, y: y + 73, width: 7, height: 7), coral)
-}
-
-func drawSudanScene(x: CGFloat, y: CGFloat) {
-    circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleGold)
-    rounded(CGRect(x: x + 326, y: y + 94, width: 92, height: 95),
-            radius: 5, teal)
-    rectangle(CGRect(x: x + 338, y: y + 176, width: 65, height: 20), ink)
-    text("UN", x: x + 353, y: y + 179, size: 14, fill: white, weight: .bold)
-    for row in 0..<2 {
-        for column in 0..<4 {
-            rectangle(CGRect(x: x + 337 + CGFloat(column) * 19,
-                             y: y + 111 + CGFloat(row) * 24,
-                             width: 10, height: 11), color(0xeaf0e8))
-        }
-    }
-    line(x + 382, y + 141, x + 398, y + 151, coral, width: 4)
-    line(x + 398, y + 151, x + 388, y + 159, coral, width: 4)
-    circle(CGRect(x: x + 367, y: y + 205, width: 14, height: 14), ink)
-    line(x + 374, y + 211, x + 350, y + 225, ink, width: 3)
-    line(x + 374, y + 211, x + 397, y + 225, ink, width: 3)
-    line(x + 353, y + 223, x + 346, y + 223, coral, width: 3)
-    line(x + 397, y + 223, x + 404, y + 223, coral, width: 3)
-}
-
-func drawMarketScene(x: CGFloat, y: CGFloat) {
+func drawBelgiumScene(x: CGFloat, y: CGFloat) {
     circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleBlue)
-    line(x + 326, y + 101, x + 326, y + 193, muted, width: 2)
-    line(x + 326, y + 101, x + 421, y + 101, muted, width: 2)
-    for offset in [0, 1, 2] {
-        let level = y + 121 + CGFloat(offset) * 25
-        line(x + 329, level, x + 417, level, color(0xc9d8de), width: 1)
+    polygon([
+        (x + 329, y + 145), (x + 412, y + 145), (x + 405, y + 168),
+        (x + 336, y + 168)
+    ], ink)
+    rectangle(CGRect(x: x + 338, y: y + 111, width: 68, height: 27), white)
+    polygon([
+        (x + 332, y + 138), (x + 372, y + 159), (x + 412, y + 138)
+    ], teal)
+    for column in 0..<4 {
+        rectangle(CGRect(x: x + 347 + CGFloat(column) * 15,
+                         y: y + 116, width: 8, height: 15), paleBlue)
     }
-    let points: [(CGFloat, CGFloat)] = [
-        (x + 334, y + 178), (x + 350, y + 163), (x + 367, y + 170),
-        (x + 383, y + 133), (x + 399, y + 119), (x + 413, y + 145)
-    ]
-    for index in 0..<(points.count - 1) {
-        line(points[index].0, points[index].1, points[index + 1].0,
-             points[index + 1].1, index < 3 ? coral : teal, width: 4)
-    }
-    circle(CGRect(x: x + 408, y: y + 140, width: 10, height: 10), teal)
+    line(x + 322, y + 98, x + 418, y + 98, muted, width: 3)
+    line(x + 337, y + 91, x + 337, y + 98, coral, width: 3)
+    line(x + 357, y + 91, x + 357, y + 98, coral, width: 3)
+    line(x + 378, y + 91, x + 378, y + 98, coral, width: 3)
+    line(x + 400, y + 91, x + 400, y + 98, coral, width: 3)
+    polygon([
+        (x + 331, y + 178), (x + 361, y + 178), (x + 372, y + 164),
+        (x + 380, y + 164), (x + 376, y + 178), (x + 405, y + 178),
+        (x + 411, y + 183), (x + 376, y + 184), (x + 384, y + 196),
+        (x + 377, y + 196), (x + 362, y + 184), (x + 334, y + 184)
+    ], gold)
 }
 
-func drawScienceScene(x: CGFloat, y: CGFloat) {
-    circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleTeal)
+func drawZambiaScene(x: CGFloat, y: CGFloat) {
+    circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleGold)
     polygon([
-        (x + 315, y + 117), (x + 340, y + 117), (x + 357, y + 101),
-        (x + 379, y + 101), (x + 399, y + 119), (x + 424, y + 119),
-        (x + 424, y + 88), (x + 315, y + 88)
-    ], color(0x4d95aa))
-    polygon([
-        (x + 316, y + 88), (x + 342, y + 88), (x + 357, y + 66),
-        (x + 381, y + 66), (x + 401, y + 88), (x + 424, y + 88),
-        (x + 424, y + 84), (x + 316, y + 84)
+        (x + 324, y + 166), (x + 369, y + 190), (x + 414, y + 166)
     ], ink)
-    line(x + 320, y + 133, x + 421, y + 133, white, width: 2)
-    line(x + 320, y + 147, x + 412, y + 147, color(0x91c5cb), width: 2)
-    rounded(CGRect(x: x + 337, y: y + 157, width: 43, height: 17),
-            radius: 8, ink)
-    circle(CGRect(x: x + 350, y: y + 163, width: 6, height: 6), gold)
-    line(x + 379, y + 165, x + 393, y + 165, ink, width: 3)
+    rectangle(CGRect(x: x + 330, y: y + 102, width: 78, height: 7), ink)
+    rectangle(CGRect(x: x + 335, y: y + 109, width: 68, height: 7), teal)
+    for column in 0..<4 {
+        let columnX = x + 340 + CGFloat(column) * 16
+        rounded(CGRect(x: columnX, y: y + 117, width: 7, height: 44),
+                radius: 3, white)
+    }
+    rectangle(CGRect(x: x + 329, y: y + 161, width: 80, height: 7), ink)
+    line(x + 368, y + 172, x + 368, y + 195, coral, width: 3)
+    line(x + 347, y + 187, x + 390, y + 187, ink, width: 3)
+    line(x + 350, y + 187, x + 344, y + 199, ink, width: 2)
+    line(x + 384, y + 187, x + 390, y + 199, ink, width: 2)
+    line(x + 336, y + 200, x + 352, y + 200, coral, width: 3)
+    line(x + 382, y + 200, x + 398, y + 200, coral, width: 3)
+}
+
+func drawHealthScene(x: CGFloat, y: CGFloat) {
+    circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleRed)
+    rounded(CGRect(x: x + 321, y: y + 118, width: 61, height: 51),
+            radius: 6, ink)
+    rounded(CGRect(x: x + 326, y: y + 123, width: 51, height: 40),
+            radius: 3, white)
+    circle(CGRect(x: x + 339, y: y + 129, width: 25, height: 28), paleRed)
+    line(x + 351, y + 169, x + 351, y + 179, ink, width: 4)
+    line(x + 337, y + 180, x + 366, y + 180, ink, width: 4)
+    line(x + 390, y + 115, x + 390, y + 180, teal, width: 5)
+    line(x + 390, y + 115, x + 408, y + 115, teal, width: 5)
+    line(x + 408, y + 115, x + 408, y + 138, teal, width: 5)
+    rounded(CGRect(x: x + 385, y: y + 139, width: 34, height: 28),
+            radius: 6, coral)
+    text("AI", x: x + 392, y: y + 147, size: 16, fill: white, weight: .bold)
+    circle(CGRect(x: x + 387, y: y + 185, width: 7, height: 7), gold)
+    circle(CGRect(x: x + 400, y: y + 177, width: 7, height: 7), gold)
+    circle(CGRect(x: x + 412, y: y + 187, width: 7, height: 7), gold)
+    line(x + 390, y + 188, x + 403, y + 180, muted, width: 1)
+    line(x + 403, y + 180, x + 415, y + 190, muted, width: 1)
+}
+
+func drawMarianaScene(x: CGFloat, y: CGFloat) {
+    circle(CGRect(x: x + 306, y: y + 84, width: 126, height: 126), paleTeal)
+    rectangle(CGRect(x: x + 314, y: y + 112, width: 110, height: 70),
+              color(0x4d95aa))
     polygon([
-        (x + 337, y + 157), (x + 321, y + 183), (x + 354, y + 174)
-    ], color(0xf0b84c, alpha: 0.55))
+        (x + 314, y + 116), (x + 336, y + 116), (x + 354, y + 138),
+        (x + 370, y + 104), (x + 383, y + 96), (x + 394, y + 116),
+        (x + 424, y + 116), (x + 424, y + 91), (x + 314, y + 91)
+    ], ink)
+    line(x + 316, y + 124, x + 344, y + 124, color(0x91c5cb), width: 2)
+    line(x + 385, y + 124, x + 420, y + 124, color(0x91c5cb), width: 2)
+    line(x + 316, y + 137, x + 344, y + 137, color(0x91c5cb), width: 2)
+    line(x + 385, y + 137, x + 420, y + 137, color(0x91c5cb), width: 2)
+    rounded(CGRect(x: x + 323, y: y + 158, width: 42, height: 17),
+            radius: 8, gold)
+    circle(CGRect(x: x + 337, y: y + 163, width: 7, height: 7), ink)
+    text("ROV", x: x + 326, y: y + 163, size: 8, fill: ink, weight: .bold)
+    line(x + 365, y + 166, x + 385, y + 166, gold, width: 3)
+    polygon([
+        (x + 337, y + 158), (x + 362, y + 186), (x + 376, y + 166)
+    ], color(0xf0b84c, alpha: 0.35))
+    for offset in [0, 1, 2] {
+        circle(CGRect(x: x + 388 + CGFloat(offset) * 11,
+                      y: y + 92 + CGFloat(offset % 2) * 5,
+                      width: 8, height: 8), coral)
+    }
 }
 
 func drawCard(x: CGFloat, y: CGFloat, label: String, first: String,
@@ -253,13 +261,13 @@ func drawCard(x: CGFloat, y: CGFloat, label: String, first: String,
     cardHeading(label, first, second, detail1, detail2, x: x, y: y, accent: accent)
     switch scene {
     case 0:
-        drawUkraineScene(x: x, y: y)
+        drawBelgiumScene(x: x, y: y)
     case 1:
-        drawSudanScene(x: x, y: y)
+        drawZambiaScene(x: x, y: y)
     case 2:
-        drawMarketScene(x: x, y: y)
+        drawHealthScene(x: x, y: y)
     default:
-        drawScienceScene(x: x, y: y)
+        drawMarianaScene(x: x, y: y)
     }
 }
 
@@ -268,37 +276,38 @@ rectangle(CGRect(x: 0, y: 1012, width: width, height: 12), coral)
 text("GLOBAL DESK   /   MONDAY, 23 NOVEMBER 2026",
      x: 48, y: 970, size: 17, fill: muted, weight: .bold)
 text("THE WORLD", x: 48, y: 874, size: 76, fill: ink, weight: .heavy)
-text("IN FOUR FRONTS", x: 51, y: 817, size: 43, fill: coral, weight: .bold)
-text("Four signals from a fast-moving day.", x: 53, y: 779,
+text("IN FOUR REPORTS", x: 51, y: 817, size: 43, fill: coral, weight: .bold)
+text("A Monday dispatch from transport, law, health and science.",
+     x: 53, y: 779,
      size: 20, fill: muted)
 drawGlobe(cx: 850, cy: 857, radius: 76)
 line(42, 751, 982, 751, ink, width: 2)
 
-drawCard(x: 40, y: 423, label: "EUROPE  /  UKRAINE",
-         first: "RUSSIAN STRIKE", second: "KILLS AT LEAST 11",
-         detail1: "Dymer block collapses;",
-         detail2: "rescuers search the rubble.",
+drawCard(x: 40, y: 423, label: "EUROPE  /  BELGIUM",
+         first: "STRIKE GROUNDS", second: "BELGIAN FLIGHTS",
+         detail1: "Air traffic halted;",
+         detail2: "trains also disrupted.",
          accent: coral, scene: 0)
-drawCard(x: 528, y: 423, label: "AFRICA  /  KHARTOUM",
-         first: "DRONE HITS", second: "RESIDENTIAL AREA",
-         detail1: "UN building damaged;",
-         detail2: "casualties and attacker unreported.",
+drawCard(x: 528, y: 423, label: "AFRICA  /  ZAMBIA",
+         first: "COURT READS", second: "TREASON CHARGE",
+         detail1: "Mundubile denies guilt;",
+         detail2: "trial expected next year.",
          accent: teal, scene: 1)
-drawCard(x: 40, y: 96, label: "ASIA  /  MARKETS",
-         first: "AI SELL-OFF", second: "WEIGHS ON SHARES",
-         detail1: "Asian shares lower;",
-         detail2: "US futures rebound.",
+drawCard(x: 40, y: 96, label: "UK  /  HEALTH",
+         first: "NHS BEGINS AI", second: "SCREENING TRIAL",
+         detail1: "Nearly 700,000 women;",
+         detail2: "tests assisted readings.",
          accent: blue, scene: 2)
 drawCard(x: 528, y: 96, label: "PACIFIC  /  SCIENCE",
          first: "MARIANA TRENCH", second: "DEEP-SEA FIND",
-         detail1: "Pyroclastic rocks found",
-         detail2: "6,148 metres below sea.",
+         detail1: "Deepest known pyroclastic",
+         detail2: "rocks: 6,148 metres.",
          accent: teal, scene: 3)
 
 rounded(CGRect(x: 40, y: 44, width: 944, height: 38), radius: 12, paleGold)
-text("ALSO MONDAY: CROWDSTRIKE TO BUY ZSCALER IN A $44B ALL-STOCK DEAL",
+text("MONDAY'S NEWS: STRIKES, COURTS, HEALTHCARE AND DEEP-SEA SCIENCE",
      x: 55, y: 55, size: 17, fill: ink, weight: .bold)
-text("SOURCES: AP  /  THE GUARDIAN  /  BERNAMA-DPA  /  PHYS.ORG",
+text("SOURCES: AL JAZEERA  /  REUTERS  /  NHS ENGLAND  /  PHYS.ORG",
      x: 42, y: 18, size: 12, fill: muted, weight: .medium)
 
 NSGraphicsContext.restoreGraphicsState()
